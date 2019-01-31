@@ -3,7 +3,8 @@ Repo for "Data access and time-series statistics" waterhackweek tutorial
 
 ## conda environment and jupyter
 
-The conda environment file `environment.yml` doesn't install jupyter. It assumes you are running jupyterlab using a different conda environment where jupyterlab is installed. We can change this (add jupyter to this conda env) later if we think it'll cause less confusion
+- The conda environment file `environment.yml` doesn't install jupyter. It assumes you are running jupyterlab using a different conda environment where jupyterlab is installed. We can change this (add jupyter to this conda env) later if we think it'll cause less confusion.
+- We may want to add a couple of packages from Emilio's [geohackweek vector tutorial conda environment file](https://github.com/geohackweek/tutorial_contents/blob/master/vector/environment.yml). Also note that in that file, `jupyter` *is* installed.
 
 ### Install miniconda and setup jupyter lab
 Steps taken from https://geohackweek.github.io/preliminary/01-conda-tutorial/
