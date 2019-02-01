@@ -13,3 +13,5 @@ dependencies:
   - ulmo
   - owslib
   - xlrd
+  - pip:
+    - git+https://github.com/emiliom/ulmo.git@pandas0_24
