@@ -7,11 +7,13 @@ dependencies:
   - ipykernel
   - requests
   - geopandas
+  - geojson
+  - ulmo
+  - owslib
   - matplotlib
   - seaborn
   - cartopy
-  - ulmo
-  - owslib
+  - folium
   - xlrd
   - pip:
     - git+https://github.com/emiliom/ulmo.git@pandas0_24

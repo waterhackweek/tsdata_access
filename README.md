@@ -1,34 +1,37 @@
-# tsdata_access
-Repo for "Data access and time-series statistics" waterhackweek tutorial
+# Data access and time-series statistics cyberseminar
 
-## conda environment and jupyter
+Repo for "Data access and time-series statistics" [WaterHackWeek](https://waterhackweek.github.io) cyberseminar. This seminar took place on February 7, 2019. The seminar series, including abstracts and links to seminar recordings, is available at https://www.cuahsi.org/education/cyberseminars/waterhackweek-cyberseminar-series/
 
-- The conda environment file `environment.yml` doesn't install jupyter. It assumes you are running jupyterlab using a different conda environment where jupyterlab is installed. We can change this (add jupyter to this conda env) later if we think it'll cause less confusion. To create a conda environment named `whw_tsdata` from this file: `conda env create -n whw_tsdata -f environment.yml`
-- We may want to add a couple of packages from Emilio's [geohackweek vector tutorial conda environment file](https://github.com/geohackweek/tutorial_contents/blob/master/vector/environment.yml). Also note that in that file, `jupyter` *is* installed.
+
+## Conda environment and Jupyter
+
+First make sure the `miniconda` or `anaconda` [conda](https://docs.conda.io/projects/conda/en/latest/) version is installed. See instructions below for [miniconda](https://docs.conda.io/en/latest/miniconda.html). See below for installation instructions.
+
+To install the conda environment used for running the Jupyter notebooks in this seminar, change to the directory where the [environment.yml](environment.yml) file is found, downloaded from this GitHub repository (or based on a git clone). Then, at the terminal, run:
+```bash
+conda env create -f environment.yml
+```
+An environment called `whwtimeseries` will be created. Note that this environment doesn't include Jupyter. It assumes you are running Jupyterlab (or jupyter notebook) using a different conda environment where Jupyterlab is installed.
 
 ### Install miniconda and setup jupyter lab
+
 Steps taken from https://geohackweek.github.io/preliminary/01-conda-tutorial/
-Instructions for MacOSX (and Windows?) are also available there.
+Instructions for MacOSX and Windows are also available there.
 
 **On linux:**
 ```bash
 # Install miniconda
 url=https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 wget $url -O miniconda.sh
-bash miniconda.sh -b -p $HOME/miniconda3
-export PATH="$HOME/miniconda3/bin:$PATH"
+bash miniconda.sh -b -p $HOME/miniconda
+export PATH="$HOME/miniconda/bin:$PATH"
 conda update conda --yes
 
 # Create a conda environment with jupyterlab
 conda create -n jupyterlab -c conda-forge python=3.6 jupyterlab nb_conda_kernels
 
 # Starting jupyter lab
-conda activate jupyterlab
-# If that doesn't work, try source activate jupyterlab
+source activate jupyterlab
+# Then run jupyter lab
 jupyter lab
 ```
-
-
-## Other WaterHackWeek resources
-- https://waterhackweek.github.io/
-- https://www.cuahsi.org/education/cyberseminars/waterhackweek-cyberseminar-series/
