@@ -15,5 +15,3 @@ dependencies:
   - cartopy
   - folium
   - xlrd
-  - pip:
-    - git+https://github.com/emiliom/ulmo.git@pandas0_24
