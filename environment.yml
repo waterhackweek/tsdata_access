@@ -1,14 +1,16 @@
-name: whwtimeseries
+name: whwtimeseries_cso
 channels:  
   - conda-forge
   - defaults
 dependencies:
-  - python=3.7
+  - python=3.6
   - ipython
   - ipykernel
   - requests
   - geopandas
+  - descartes
   - geojson
+  - xarray
   - ulmo
   - owslib
   - matplotlib
