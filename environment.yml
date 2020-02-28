@@ -1,4 +1,4 @@
-name: whwtimeseries_cso
+name: whwtimeseries
 channels:  
   - conda-forge
   - defaults
@@ -10,7 +10,10 @@ dependencies:
   - geopandas
   - descartes
   - geojson
+  - rasterio
+  - netcdf4
   - xarray
+  - dask
   - ulmo
   - owslib
   - matplotlib
@@ -18,3 +21,4 @@ dependencies:
   - cartopy
   - folium
   - xlrd
+
