@@ -2,6 +2,7 @@
 
 Repo for "Data access and time-series statistics" [WaterHackWeek](https://waterhackweek.github.io) cyberseminar. This seminar took place on February 7, 2019. The seminar series, including abstracts and links to seminar recordings, is available at https://www.cuahsi.org/education/cyberseminars/waterhackweek-cyberseminar-series/
 
+Launch on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/waterhackweek/tsdata_access/master) to run and explore the Jupyter notebooks.
 
 ## Conda environment and Jupyter
 
